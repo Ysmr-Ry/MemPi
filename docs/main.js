@@ -35,7 +35,7 @@ document.onkeyup = event => {
   {
     if( code == 84 )
     {
-      var url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent("MemPi Score: "+p+" digits\n#MemPi #円周率チャレンジ");
+      var url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent("MemPi Score: "+p+" digits\n#MemPi #円周率チャレンジ https://ysmr-ry.github.io/MemPi/");
       window.open( url, '_blank' );
     }
     else if( code == 32 )

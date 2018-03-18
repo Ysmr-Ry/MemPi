@@ -1,5 +1,5 @@
 var cvs, ctx, cntr;
-var ang = 0, p = 0, r = 200, alpha = 1.0, theta = 0.0, toTheta = 0.0, fl = false, sfl = false, infoX = 160, infoY = 100, end = false;
+var ang = 0, p = 0, r = 200, alpha = 1.0, theta = 0.0, toTheta = 0.0, fl = false, sfl = false, infoX = 30, infoY = 100, end = false;
 
 window.onload = function() {
   cvs = document.getElementById('canvas');
@@ -73,7 +73,8 @@ function render()
 
   ctx.fillStyle = "rgb(40,40,40)";
   ctx.font = "normal 80px 'Yu Gothic'";
-  ctx.textAlign = "center";
+
+  ctx.textAlign = end ? "center" : "left";
 
   let mod = fl?10:p%10;
 
@@ -81,6 +82,7 @@ function render()
 
   ctx.fillStyle = "rgba(40,40,40,"+alpha+")";
   ctx.font = "normal 100px 'Yu Gothic'";
+  ctx.textAlign = "center";
 
   if( !end )
   {

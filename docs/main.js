@@ -45,7 +45,7 @@ document.onkeyup = event => {
       alpha = 1.0;
       theta = toTheta = 0.0;
       fl = sfl = end = false;
-      infoX = 160;
+      infoX = 30;
       infoY = 100;
     }
   }
